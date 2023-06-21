@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Information Display </title>
+    <style>
+        
+        img{ /*resize image retrieved from the img_src --> URL */
+            width: 50%;
+            height: 50%;
+        }
+
+        table{ /* entire table --> takes the whole space in HTML page */
+            margin-left: 20%;
+            margin-right: 20%;
+            /* width: 100%;       */
+        }
+
+        th{ /* table header --> Company Name, Logo, About */
+            text-align: left; 
+            padding: 10px;
+            border-top: 1px solid gray;;
+            border-bottom: 1px solid gray;
+        }
+
+        td{ /* comany data --> company_name, img_src, about */
+            text-align: left;
+            padding:10px;
+            border-bottom: 1px solid gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- create a table -->
+    <table>
+        <!-- group header content in an HTML Table , a table header-->
+        <thead > 
+            <!-- table row -->
+            <tr> 
+                <!-- column heading and row heading-->
+                <th> <b> Company Name </b>  </th>
+                <th > <b> Logo </b></th> 
+                <th> <b> About </b></th>
+            </tr>
+        </thead>
+
+        <!-- tab-->
+        <tbody id = "tableBody"></tbody>
+       
+    </table>
+
+    <!-- connect javascript file with HTML file -->
+    <script src = "info.js"> </script>
+
+</body>
+</html>
